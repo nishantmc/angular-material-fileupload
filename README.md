@@ -33,7 +33,7 @@ export class AppModule { }
 ```
 
 # Example
-![Screenshot](Demo.gif)
+![Screenshot](SingleFileDemo.gif)
 
 ``` HTML
 <label for="singleFile">Upload file</label>
