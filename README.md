@@ -52,7 +52,7 @@ export class AppModule { }
 * fileAlias and httpUrl are input variables which you can bind. 'fileAlias' - as you might guess just the alias of the file. and 'httpUrl' is the url you want to do POST with multipart data.
 
 # Drag and drop example
-![DragAndDropDemo.gif]
+![Screenshot](DragAndDropDemo.gif)
 
 ``` HTML
 
