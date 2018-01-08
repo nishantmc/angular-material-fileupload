@@ -32,7 +32,7 @@ export class AppModule { }
 
 ```
 
-# Example
+# File upload Example
 ![Screenshot](SingleFileDemo.gif)
 
 ``` HTML
@@ -50,3 +50,24 @@ export class AppModule { }
 **Notes**
 * 'fileUploadQueue' is the template input variable which point to the queue. You can see its created in the queue tag (#fileUploadQueue). Basically pointing the input to the queue
 * fileAlias and httpUrl are input variables which you can bind. 'fileAlias' - as you might guess just the alias of the file. and 'httpUrl' is the url you want to do POST with multipart data.
+
+# Drag and drop example
+![DragAndDropDemo.gif]
+
+``` HTML
+
+<div [fileUploadInputFor]="fileUploadQueue" class="upload-drop-zone">
+    Just drag and drop files here
+</div>
+
+
+<div style="width: 500px">
+    <mat-file-upload-queue #fileUploadQueue
+        [fileAlias]="'file'"
+        [httpUrl]="'http://localhost:8180/jax-rs-jersey-application-sample'" multiple>
+    
+        <mat-file-upload [file]="file" [id]="i" *ngFor="let file of fileUploadQueue.files; let i = index"></mat-file-upload>
+    </mat-file-upload-queue>
+</div>
+
+```
