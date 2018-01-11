@@ -1,0 +1,9 @@
+<mat-card>
+    <span class="file-info">{{file.name}}({{file.size | bytes}})</span>
+    <section class="example-section">
+        <mat-progress-bar class="example-margin" [value]="progressPercentage"></mat-progress-bar>
+        <a [ngClass]="{'disabled' : isUploading}"><mat-icon class="action" (click)="upload()">file_upload</mat-icon></a>
+        <mat-icon class="action" (click)="remove()">cancel</mat-icon>
+    </section>
+    <span class="file-info">{{progressPercentage}}%</span><span> {{loaded | bytes}} of {{total | bytes}}</span>
+</mat-card>
