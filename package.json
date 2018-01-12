@@ -1,7 +1,11 @@
 {
-  "name": "angular-webpack-starter",
-  "version": "1.0.0",
-  "description": "A webpack starter for Angular",
+  "name": "angular-material-fileupload",
+  "version": "0.0.6",
+  "description": "A fileupload component based on angular-material design",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/nishantmc/angular-material-fileupload.git"
+  },
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 8080",
     "test": "karma start",
