@@ -1,6 +1,9 @@
 # angular-material-fileupload
 A fileupload component based on angular-material design
 
+# Documentation
+[angular-material-fileupload API doc](https://nishantmc.github.io/angular-material-fileupload.github.io/)
+
 # Demo
 
 # Setup
