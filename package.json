@@ -1,6 +1,6 @@
 {
   "name": "angular-material-fileupload",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "A fileupload component based on angular-material design",
   "repository" :
   { "type" : "git"
@@ -11,7 +11,7 @@
     "test": "karma start",
     "testlib": "karma start config/karma.lib.conf.js",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "bundle": "rimraf dist && rollup -c rollup.config.umd.js && rollup -c rollup.config.esm.js && tsc"
+    "bundle": "rimraf dist && rollup -c rollup.config.umd.js && rollup -c rollup.config.esm.js && tsc && node copy-code.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -20,12 +20,13 @@
     "@angular/compiler": "~5.1.2",
     "@angular/core": "~5.1.2",
     "@angular/forms": "~5.1.2",
-    "@angular/http": "~5.1.2",
+    
     "@angular/platform-browser": "~5.1.2",
     "@angular/platform-browser-dynamic": "~5.1.2",
-    "@angular/router": "~5.1.2",
-    "@angular/cdk": "2.0.0-beta.12",
-    "@angular/material": "2.0.0-beta.12",
+
+    "@angular/cdk": "^5.1.0",
+    "@angular/material": "^5.1.0",
+
     "core-js": "^2.4.1",
     "rxjs": "^5.5.0",
     "zone.js": "^0.8.4"

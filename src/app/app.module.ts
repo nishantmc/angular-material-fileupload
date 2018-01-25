@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { MatFileUploadModule } from '../lib/index';
+import { MatFileUploadModule } from '../lib/matFileUpload.module';
 import { MatButtonModule } from '@angular/material';
 
 

@@ -14,7 +14,6 @@ export default {
         '@angular/compiler',
         '@angular/core',
         '@angular/forms',
-        '@angular/http',
         '@angular/cdk',
         '@angular/material',
         'rxjs/Subscription',
