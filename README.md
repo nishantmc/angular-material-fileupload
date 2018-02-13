@@ -1,4 +1,4 @@
-# angular-material-fileupload
+# angular-material-fileupload [![npm version](https://badge.fury.io/js/angular-material-fileupload.svg)](https://badge.fury.io/js/angular-material-fileupload)
 A fileupload component based on angular-material design
 
 # Documentation
