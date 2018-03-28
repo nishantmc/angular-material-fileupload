@@ -7,8 +7,8 @@ A fileupload component based on angular-material design
 # Demo
 
 # Setup
-
-The module to be imported is "MatFileUploadModule"
+1. Install the package `npm i angular-material-fileupload`
+2. Import the module "MatFileUploadModule"
 
 ``` Typescript
 
