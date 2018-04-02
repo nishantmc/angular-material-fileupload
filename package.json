@@ -1,6 +1,6 @@
 {
   "name": "angular-material-fileupload",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "A fileupload component based on angular-material design",
   "repository" :
   { "type" : "git"
@@ -15,17 +15,17 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@angular/animations": "~5.1.2",
-    "@angular/common": "~5.1.2",
-    "@angular/compiler": "~5.1.2",
-    "@angular/core": "~5.1.2",
-    "@angular/forms": "~5.1.2",
+    "@angular/animations": ">=5.1.0",
+    "@angular/common": ">=5.1.0",
+    "@angular/compiler": ">=5.1.0",
+    "@angular/core": ">=5.1.0",
+    "@angular/forms": ">=5.1.0",
     
-    "@angular/platform-browser": "~5.1.2",
-    "@angular/platform-browser-dynamic": "~5.1.2",
+    "@angular/platform-browser": ">=5.1.0",
+    "@angular/platform-browser-dynamic": ">=5.1.0",
 
-    "@angular/cdk": "^5.1.0",
-    "@angular/material": "^5.1.0",
+    "@angular/cdk": ">=5.1.0",
+    "@angular/material": ">=5.1.0",
 
     "core-js": "^2.4.1",
     "rxjs": "^5.5.0",
