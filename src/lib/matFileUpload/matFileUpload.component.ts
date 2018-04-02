@@ -86,7 +86,7 @@ import { MatFileUploadQueue } from '../matFileUploadQueue/matFileUploadQueue.com
       let formData = new FormData();
       formData.set(this.fileAlias, this._file, this._file.name);
       this.fileUploadSubscription = this.HttpClient.post(this.httpUrl, formData, {
-       // headers: this.httpRequestHeaders,
+        headers: this.httpRequestHeaders,
         observe: "events",
         params: this.httpRequestParams,
         reportProgress: true,
@@ -115,7 +115,7 @@ import { MatFileUploadQueue } from '../matFileUploadQueue/matFileUploadQueue.com
     }
 
     ngOnDestroy() {
-      console.log('file '+ this._file.name + ' destryed...');
+      console.log('file '+ this._file.name + ' destroyed...');
     }
 
 }
