@@ -2,9 +2,9 @@
   "name": "angular-material-fileupload",
   "version": "0.0.10",
   "description": "A fileupload component based on angular-material design",
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/nishantmc/angular-material-fileupload.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nishantmc/angular-material-fileupload.git"
   },
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 8080",
@@ -15,21 +15,18 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@angular/animations": ">=5.1.0",
-    "@angular/common": ">=5.1.0",
-    "@angular/compiler": ">=5.1.0",
-    "@angular/core": ">=5.1.0",
-    "@angular/forms": ">=5.1.0",
-    
-    "@angular/platform-browser": ">=5.1.0",
-    "@angular/platform-browser-dynamic": ">=5.1.0",
-
-    "@angular/cdk": ">=5.1.0",
-    "@angular/material": ">=5.1.0",
-
+    "@angular/animations": "^5.2.10",
+    "@angular/common": "^5.2.10",
+    "@angular/compiler": "^5.2.10",
+    "@angular/core": "^5.2.10",
+    "@angular/forms": "^5.2.10",
+    "@angular/platform-browser": "^5.2.10",
+    "@angular/platform-browser-dynamic": "^5.2.10",
+    "@angular/cdk": "^5.2.5",
+    "@angular/material": "^5.2.5",
     "core-js": "^2.4.1",
-    "rxjs": "^5.5.0",
-    "zone.js": "^0.8.4"
+    "rxjs": "^5.5.2",
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@types/node": "^6.0.45",
@@ -59,7 +56,6 @@
     "karma-webpack": "2.0.9",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-jasmine-html-reporter": "0.2.2",
-
     "rollup": "0.53.3",
     "rollup-plugin-angular": "^0.4.4",
     "rollup-plugin-commonjs": "^8.0.2",
