@@ -42,7 +42,7 @@ import { MatFileUploadQueue } from '../matFileUploadQueue/matFileUploadQueue.com
     @Input()
     httpRequestHeaders: HttpHeaders | {
       [header: string]: string | string[];
-    } = new HttpHeaders().set("Content-Type", "multipart/form-data");
+    } = new HttpHeaders();
 
     @Input()
     httpRequestParams: HttpParams | {
