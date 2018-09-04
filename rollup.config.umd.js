@@ -4,10 +4,13 @@ import angular from 'rollup-plugin-angular';
 import typescript from 'rollup-plugin-typescript';
 var sass = require('node-sass');
 export default {
-    entry: './src/lib/matFileUpload.ts',
-    format: 'umd',
-    moduleName: 'matFileUpload',
-    sourceMap:true,
+    input: './src/lib/matFileUpload.ts',
+    output: {
+        name: 'matFileUpload',
+        format: 'umd',
+        file: "dist/matFileUpload.umd.js",
+        sourcemap: true,
+    },
     external: [
         '@angular/animations',       
         '@angular/common/http',
@@ -23,7 +26,6 @@ export default {
         '@angular/material/icon',
         '@angular/common'
     ],
-    dest:"dist/matFileUpload.umd.js",
     plugins: [
     angular(
         {
