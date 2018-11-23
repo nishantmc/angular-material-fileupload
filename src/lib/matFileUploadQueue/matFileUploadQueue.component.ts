@@ -69,11 +69,11 @@ export class MatFileUploadQueue implements OnDestroy {
   }
 
   public uploadAll() {
-    this.fileUploads.forEach((fileUpload) => { fileUpload.upload() });
+    this.fileUploads.forEach(fileUpload => fileUpload.upload());
   }
 
   public removeAll() {
-    this.fileUploads.forEach((fileUpload) => { fileUpload.remove() });
+    this.fileUploads.forEach(fileUpload=> fileUpload.remove());
     this.files.splice(0, this.files.length);
   }
 
