@@ -1,7 +1,6 @@
-import { Component, OnInit, OnDestroy, QueryList, ViewChildren, Input, ContentChildren, forwardRef } from '@angular/core';
+import { Component, OnDestroy, QueryList, Input, ContentChildren, forwardRef } from '@angular/core';
 import { MatFileUpload } from './../matFileUpload/matFileUpload.component';
-import { Subscription } from 'rxjs';
-import { merge } from 'rxjs';
+import { Subscription, Observable, merge } from 'rxjs';
 import { startWith } from 'rxjs/operators';
 import { HttpHeaders, HttpParams } from '@angular/common/http';
 
@@ -25,11 +24,11 @@ import { HttpHeaders, HttpParams } from '@angular/common/http';
     private _changeSubscription: Subscription;
 
     /** Combined stream of all of the file upload remove change events. */
-    get fileUploadRemoveEvents() {
+    get fileUploadRemoveEvents(): Observable<MatFileUpload> {
         return merge(...this.fileUploads.map(fileUpload => fileUpload.removeEvent));
     }
 
-    private files: Array<any> = [];
+    public files: Array<any> = [];
 
     /* Http request input bindings */
     @Input()

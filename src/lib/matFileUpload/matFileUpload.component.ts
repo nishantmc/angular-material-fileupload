@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnDestroy, OnInit, Output, Optional, Inject, forwardRef } from '@angular/core';
+import { Component, EventEmitter, Input, OnDestroy, Output, Inject, forwardRef } from '@angular/core';
 import { HttpClient, HttpEventType, HttpHeaders, HttpParams } from '@angular/common/http';
 import { MatFileUploadQueue } from '../matFileUploadQueue/matFileUploadQueue.component';
 
@@ -31,7 +31,7 @@ import { MatFileUploadQueue } from '../matFileUploadQueue/matFileUploadQueue.com
 
     }
 
-    private isUploading:boolean = false;
+    public isUploading:boolean = false;
 
 
 
@@ -73,9 +73,9 @@ import { MatFileUploadQueue } from '../matFileUploadQueue/matFileUploadQueue.com
     @Output() removeEvent = new EventEmitter<MatFileUpload>();
     @Output() onUpload = new EventEmitter();
 
-    private progressPercentage: number = 0;
+    public progressPercentage: number = 0;
     public loaded: number = 0;
-    private total: number = 0;
+    public total: number = 0;
     private _file: any;
     private _id: number;
     private fileUploadSubscription: any;

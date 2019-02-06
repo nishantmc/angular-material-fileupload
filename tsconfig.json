@@ -10,5 +10,11 @@
        "outDir": "./dist",
        "lib": ["es2015", "dom"]
     },
+    "angularCompilerOptions": {
+      "skipTemplateCodegen": true,
+      "skipMetadataEmit": false,
+      "strictMetadataEmit": true,
+      "annotationsAs": "decorators"
+   },
     "files": ["./src/lib/matFileUpload.ts"]
  }

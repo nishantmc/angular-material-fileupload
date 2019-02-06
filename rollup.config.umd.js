@@ -11,20 +11,19 @@ export default {
         file: "dist/matFileUpload.umd.js",
         sourcemap: true,
     },
-    external: [
-        '@angular/animations',       
-        '@angular/common/http',
+    external: [  
+        '@angular/animations',
+        '@angular/common',
         '@angular/compiler',
         '@angular/core',
         '@angular/forms',
+        '@angular/platform-browser',
+        '@angular/platform-browser-dynamic',
         '@angular/cdk',
         '@angular/material',
-        'rxjs/Subscription',
-        'rxjs/Observable',
-        'rxjs/observable/merge',
-        'rxjs/operators/startWith',
-        '@angular/material/icon',
-        '@angular/common'
+        'core-js',
+        'rxjs',
+        'zone.js'
     ],
     plugins: [
     angular(
