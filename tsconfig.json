@@ -1,20 +1,31 @@
 {
-    "compilerOptions": {
-       "target": "es5",
-       "module": "es2015",
-       "sourceMap":   true,
-       "moduleResolution": "node",
-       "emitDecoratorMetadata": true,
-       "experimentalDecorators": true,
-       "declaration": true,
-       "outDir": "./dist",
-       "lib": ["es2015", "dom"]
-    },
-    "angularCompilerOptions": {
-      "skipTemplateCodegen": true,
-      "skipMetadataEmit": false,
-      "strictMetadataEmit": true,
-      "annotationsAs": "decorators"
+   "compileOnSave": false,
+   "compilerOptions": {
+     "baseUrl": "./",
+     "outDir": "./dist",
+     "sourceMap": true,
+     "declaration": true,
+     "module": "es2015",
+     "moduleResolution": "node",
+     "emitDecoratorMetadata": true,
+     "experimentalDecorators": true,
+     "importHelpers": true,
+     "target": "es5",
+     "typeRoots": [
+       "node_modules/@types"
+     ],
+     "lib": [
+       "es2018",
+       "dom"
+     ]
    },
-    "files": ["./src/lib/matFileUpload.ts"]
+   "angularCompilerOptions": {
+    "skipTemplateCodegen": true,
+    "skipMetadataEmit": false,
+    "strictMetadataEmit": true,
+    "annotationsAs": "decorators",
+    "enableResourceInlining": true
+  },
+   "files": ["./src/lib/matFileUpload.ts"]
  }
+ 
