@@ -1,0 +1,32 @@
+<ng-container *ngIf="uploadProgress$ | async as uploadProgress">
+  <mat-card>
+    <span class="file-summary">{{ file.name }}({{ file.size | bytes }})</span>
+    <div class="upload-progress">
+      <mat-progress-bar
+        [value]="uploadProgress.progressPercentage"
+      ></mat-progress-bar>
+
+      <button
+        mat-icon-button
+        [attr.aria-label]="fileUploadAriaLabel"
+        (click)="upload()"
+        [disabled]="uploadInProgress$ | async"
+      >
+        <mat-icon>file_upload</mat-icon>
+      </button>
+
+      <button
+        mat-icon-button
+        [attr.aria-label]="cancelAriaLabel"
+        (click)="remove()"
+      >
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </div>
+    <span class="file-summary">{{ uploadProgress.progressPercentage }}%</span>
+    <span>
+      {{ uploadProgress.loaded | bytes }} of
+      {{ uploadProgress.total | bytes }}</span
+    >
+  </mat-card>
+</ng-container>
