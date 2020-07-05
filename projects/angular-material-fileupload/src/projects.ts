@@ -1,5 +1,5 @@
 /*
- * Public API Surface of mat-file-upload
+ * Public API Surface of angular-material-fileupload
  */
 
 export * from "./lib/mat-file-upload.module";

@@ -3,39 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "matFileUpload": {
-      "projectType": "library",
-      "root": "projects/mat-file-upload",
-      "sourceRoot": "projects/mat-file-upload/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/mat-file-upload/tsconfig.lib.json",
-            "project": "projects/mat-file-upload/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/mat-file-upload/src/test.ts",
-            "tsConfig": "projects/mat-file-upload/tsconfig.spec.json",
-            "karmaConfig": "projects/mat-file-upload/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/mat-file-upload/tsconfig.lib.json",
-              "projects/mat-file-upload/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        }
-      }
-    },
     "file-uploader": {
       "projectType": "application",
       "schematics": {
@@ -61,6 +28,7 @@
               "projects/file-uploader/src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/file-uploader/src/styles.scss"
             ],
             "scripts": []
@@ -125,9 +93,7 @@
               "projects/file-uploader/src/favicon.ico",
               "projects/file-uploader/src/assets"
             ],
-            "styles": [
-              "projects/file-uploader/src/styles.scss"
-            ],
+            "styles": ["projects/file-uploader/src/styles.scss"],
             "scripts": []
           }
         },
@@ -139,9 +105,7 @@
               "projects/file-uploader/tsconfig.spec.json",
               "projects/file-uploader/e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -157,7 +121,40 @@
           }
         }
       }
+    },
+    "angular-material-fileupload": {
+      "projectType": "library",
+      "root": "projects/angular-material-fileupload",
+      "sourceRoot": "projects/angular-material-fileupload/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-material-fileupload/tsconfig.lib.json",
+            "project": "projects/angular-material-fileupload/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-material-fileupload/src/test.ts",
+            "tsConfig": "projects/angular-material-fileupload/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-material-fileupload/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-material-fileupload/tsconfig.lib.json",
+              "projects/angular-material-fileupload/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
     }
   },
-  "defaultProject": "matFileUpload"
+  "defaultProject": "angular-material-fileupload"
 }

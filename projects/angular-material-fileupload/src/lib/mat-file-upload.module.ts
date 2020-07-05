@@ -11,6 +11,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { MatFileUploadQueueComponent } from "./mat-file-upload-queue/mat-file-upload-queue.component";
 import { MatFileUploadComponent } from "./mat-file-upload/mat-file-upload.component";
 import { FileUploadInputForDirective } from "./file-upload-input-for/file-upload-input-for.directive";
+
 @NgModule({
   declarations: [
     BytesPipe,
