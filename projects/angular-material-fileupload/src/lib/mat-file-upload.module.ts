@@ -1,11 +1,9 @@
 import { NgModule } from "@angular/core";
 import { BytesPipe } from "./bytes/bytes.pipe";
-import {
-  MatProgressBarModule,
-  MatCardModule,
-  MatButtonModule,
-  MatIconModule,
-} from "@angular/material";
+import { MatIconModule } from '@angular/material/icon';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
 import { MatFileUploadQueueComponent } from "./mat-file-upload-queue/mat-file-upload-queue.component";
