@@ -20,11 +20,9 @@
     ],
     "paths": {
       "angular-material-fileupload": [
-        "dist/angular-material-fileupload",
         "dist/angular-material-fileupload"
       ],
       "angular-material-fileupload/*": [
-        "dist/angular-material-fileupload/*",
         "dist/angular-material-fileupload/*"
       ]
     }

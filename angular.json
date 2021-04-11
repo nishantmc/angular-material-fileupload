@@ -93,7 +93,9 @@
               "projects/file-uploader/src/favicon.ico",
               "projects/file-uploader/src/assets"
             ],
-            "styles": ["projects/file-uploader/src/styles.scss"],
+            "styles": [
+              "projects/file-uploader/src/styles.scss"
+            ],
             "scripts": []
           }
         },
@@ -105,7 +107,9 @@
               "projects/file-uploader/tsconfig.spec.json",
               "projects/file-uploader/e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
@@ -129,10 +133,15 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/angular-material-fileupload/tsconfig.lib.json",
             "project": "projects/angular-material-fileupload/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-material-fileupload/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
@@ -150,7 +159,9 @@
               "projects/angular-material-fileupload/tsconfig.lib.json",
               "projects/angular-material-fileupload/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
