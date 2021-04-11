@@ -1,5 +1,4 @@
 import { NgModule } from "@angular/core";
-import { BytesPipe } from "./bytes/bytes.pipe";
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatCardModule } from '@angular/material/card';
@@ -9,6 +8,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { MatFileUploadQueueComponent } from "./mat-file-upload-queue/mat-file-upload-queue.component";
 import { MatFileUploadComponent } from "./mat-file-upload/mat-file-upload.component";
 import { FileUploadInputForDirective } from "./file-upload-input-for/file-upload-input-for.directive";
+import { BytesPipe } from "./bytes/bytes.pipe";
+
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FileUploadInputForDirective } from "./file-upload-input-for/file-upload
     MatFileUploadQueueComponent,
     MatFileUploadComponent,
     FileUploadInputForDirective,
+
   ],
   imports: [
     MatProgressBarModule,
@@ -32,4 +34,4 @@ import { FileUploadInputForDirective } from "./file-upload-input-for/file-upload
     FileUploadInputForDirective,
   ],
 })
-export class MatFileUploadModule {}
+export class MatFileUploadModule { }
