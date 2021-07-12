@@ -137,7 +137,7 @@ export class MatFileUploadComponent implements OnInit, OnDestroy {
             this.fileUploadSubscription.unsubscribe();
           }
           this.uploadInProgressSubject.next(false);
-          this.onUpload.emit({ file: this._file, event: event });
+          this.onUpload.emit({ file: this._file, event: error });
         },
         () => this.uploadInProgressSubject.next(false)
       )
