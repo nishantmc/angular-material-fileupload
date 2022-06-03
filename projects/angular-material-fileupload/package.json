@@ -16,7 +16,7 @@
   ],
   "devDependencies": {
     "@angular/common": "^8.2.14",
-    "@angular/core": "^8.2.14",
+    "@angular/core": "^11.0.5",
     "@angular/material": "^8.2.3",
     "@angular/cdk": "^8.2.3",
     "rxjs": "^6.4.0",
@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "@angular/common": "^8.2.14",
-    "@angular/core": "^8.2.14",
+    "@angular/core": "^11.0.5",
     "@angular/material": "^8.2.3",
     "@angular/cdk": "^8.2.3",
     "rxjs": "^6.4.0",
