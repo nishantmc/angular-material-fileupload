@@ -41,7 +41,7 @@
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "jasmine-marbles": "0.6.0",
-    "karma": "~4.1.0",
+    "karma": "~6.4.1",
     "karma-jasmine-matchers": "4.0.2",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.1",
